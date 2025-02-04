@@ -1,11 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Mueve left-cover a la izquierda y right-container a la derecha */
+    align-items: center; /* Alinea verticalmente */
+    background-color: rgba(225, 241, 238, 0.733);
+    width: 1280px;
+    height: 100vh;
+    padding: 20px; /* Espaciado opcional */
+}
+
 .left-cover {
     background-color: red;
-    height: 100px;
-    width: 100px;
+    width: 600px;
+    height: 1000px;
+    background-image: url(assets/dog.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
+
 
 .right-container {
     background-color: blue;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 600px;
 }
