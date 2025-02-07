@@ -17,7 +17,7 @@ body {
     height: 1000px; 
     background-image: url(assets/dog.jpg); 
     background-size: cover; 
-    background-position: 80%; /* Esto es para desplazar un poco la img*/
+    background-position: 80%; /* Esto es para desplazar un poco la img */
 }
 
 .right-container {
@@ -25,3 +25,25 @@ body {
     height: 1000px;  
     flex-grow: 1; /* Se expandirá ocupando el espacio disponible */
 }  
+
+.title {
+    font-family: 'poppins';
+    color: #30977F;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.description {
+    font-family: 'poppins';
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    margin-top: -30px;
+}
+
+.form-title {
+    font-family: 'poppins';
+    font-weight: 500;
+    color: #30977F;
+}
