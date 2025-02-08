@@ -2,30 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Pet Survey Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pet Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- Contenedor principal -->
     <div class="container">
+      <!-- Sección izquierda con el título y la descripción -->
       <div class="left-cover">
         <h1 id="title" class="title">MY PET SURVEY FORM</h1>
-        <p id="description" class="description">Tell us about your furry friend!</p>
+        <p id="description" class="description">
+          Tell us about your furry friend!
+        </p>
       </div>
+
+      <!-- Sección derecha con el formulario -->
       <div class="right-container">
         <form id="survey-form">
+          <!-- Sección de información de la mascota -->
           <div class="form-pet">
             <h1 id="pet-title" class="form-title">PET INFORMATION</h1>
-            <div class="form-group">
-              <label id="name-label" for="name">Name</label>
-              <input type="text" name="name" id="name" placeholder="Enter your pet's name">
-            </div>
-          </div>
-          <div class="form-client">
 
+            <!-- Primera línea del formulario -->
+            <div class="first-line-pet">
+              <!-- Grupo de formulario: Nombre de la mascota -->
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your pet's name"
+                  required
+                />
+              </div>
+
+              <!-- Grupo de formulario: Foto de la mascota -->
+              <div class="upload-container">
+                <!-- Círculo que contiene la imagen de la cámara -->
+                <label class="upload-photo" for="upload-photo">
+                  <img src="assets/photo-icon.png" alt="upload icon" />
+                </label>
+                <!-- Texto de instrucción -->
+                <span class="upload-text">Upload your pet's photo</span>
+
+                <!-- Input del archivo oculto -->
+                <input
+                  type="file"
+                  id="upload-photo"
+                  class="upload-input"
+                  accept="image/*"
+                />
+              </div>
+            </div>
+
+            <!-- Segunda línea del formulario -->
+            <div class="form-group"></div>
           </div>
         </form>
       </div>
-  </div>
+    </div>
   </body>
 </html>
