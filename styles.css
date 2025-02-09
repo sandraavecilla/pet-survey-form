@@ -1,94 +1,68 @@
 body {
+  background-image: url(assets/background-1.jpg);
+  background-size: cover;
+  margin: 0px;
+  font-family: "poppins";
+}
+
+.main-app {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(assets/background-1.jpg);
-  background-size: cover;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 100vh;
   background-color: rgba(46, 84, 76, 0.6);
-  z-index: -1;
 }
 
 .container {
   display: flex;
-  justify-content: space-between; /* Mueve left-cover a la izquierda y right-container a la derecha */
-  align-items: center; /* Alinea verticalmente */
   width: 1280px;
-  height: 100vh;
+  height: 950px;
+  /* TODO: Revisar responsive altura y border */
+  border: 1px solid red;
+  border-radius: 5px;
 }
 
 .left-cover {
   width: 600px;
-  height: 1000px;
   background-image: url(assets/dog.jpg);
   background-size: cover;
   background-position: 80%; /* Esto es para desplazar un poco la img */
-  border: 1px transparent;
-  border-radius: 5px 0px 0px 5px;
 }
 
 .right-container {
   background-color: #f8ecec;
-  height: 1000px;
   flex-grow: 1; /* Se expandirá ocupando el espacio disponible */
-  border: 1px transparent;
-  border-radius: 0 5px 5px 0;
+  padding: 40px;
 }
 
 .title {
-  font-family: "poppins";
   color: #30977f;
   font-size: 45px;
   text-align: center;
-  margin-top: 40px;
 }
 
 .description {
-  font-family: "poppins";
   color: white;
   text-align: center;
   font-size: 28px;
-  margin-top: -30px;
 }
 
 .form-title {
-  font-family: "poppins";
   font-weight: 500;
   font-size: 20pt;
   color: #30977f;
-  margin-left: 50px;
-  margin-top: 50px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  font-family: "poppins";
-  margin-left: 50px;
-}
-
-.form-group label {
-  margin-bottom: 10px;
 }
 
 .form-control {
   width: 40%;
   height: 35px;
-  margin-top: -5px;
-  font-family: "poppins";
+
   font-size: medium;
-  padding-left: 15px;
   border: none;
 }
 
@@ -99,9 +73,6 @@ body::before {
 .upload-container {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-left: 360px;
-  margin-top: -40px;
 }
 
 .upload-photo {
@@ -122,8 +93,4 @@ body::before {
 
 .upload-input {
   display: none;
-}
-
-.upload-text {
-  font-family: "poppins";
 }
