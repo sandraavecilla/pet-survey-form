@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Fondo -->
     <div class="main-app">
       <!-- Contenedor principal formulario -->
       <div class="container">
@@ -25,11 +26,13 @@
               <div class="title-form-pet">
                 <h1 id="pet-title" class="form-title">PET INFORMATION</h1>
               </div>
-              <!-- Primera línea del formulario -->
+
               <div class="first-line-pet">
-                <!-- Grupo de formulario: Nombre de la mascota -->
-                <div class="form-group">
+                <div class="headers">
                   <label id="name-label" for="name">Name</label>
+                </div>
+
+                <div class="form-fields">
                   <input
                     type="text"
                     name="name"
@@ -38,24 +41,20 @@
                     placeholder="Enter your pet's name"
                     required
                   />
+                  <div class="upload-container">
+                    <label class="upload-photo" for="upload-photo">
+                      <img src="assets/photo-icon.png" alt="upload icon" />
+                    </label>
+                    <span class="upload-text">Upload your pet's photo</span>
+                    <input
+                      type="file"
+                      id="upload-photo"
+                      class="upload-input"
+                      accept="image/*"
+                    />
+                  </div>
                 </div>
                 <!-- Grupo de formulario: Foto de la mascota -->
-                <div class="upload-container">
-                  <!-- Círculo que contiene la imagen de la cámara -->
-                  <label class="upload-photo" for="upload-photo">
-                    <img src="assets/photo-icon.png" alt="upload icon" />
-                  </label>
-                  <!-- Texto de instrucción -->
-                  <span class="upload-text">Upload your pet's photo</span>
-
-                  <!-- Input del archivo oculto -->
-                  <input
-                    type="file"
-                    id="upload-photo"
-                    class="upload-input"
-                    accept="image/*"
-                  />
-                </div>
               </div>
 
               <!-- Segunda línea del formulario -->
